@@ -13,6 +13,9 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var path = require('path');
 var router = express.Router();
+var favicon = require('serve-favicon')
+
+app.use(favicon(path.join(__dirname, 'views', 'css', 'pictures', 'favicon.ico')))
 
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/views/html/home.html');
