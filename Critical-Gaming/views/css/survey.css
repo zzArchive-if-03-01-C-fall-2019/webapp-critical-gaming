@@ -1,0 +1,23 @@
+.toggle-buttons input[type="radio"]{
+    visibility:hidden;
+}
+.toggle-buttons label {
+  border: 5px solid white;
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+
+.toggle-buttons input:checked + label {
+  background: #ebf5d7;
+  color: #5a9900;
+  box-shadow: none;
+}
+
+body{
+  text-align: center;
+  padding-bottom: 300px;
+}
+
+h3{
+  padding: 50px;
+}

@@ -1,0 +1,30 @@
+.gameheader{
+    grid-area: header;
+   text-align: center;
+   font-family: "Pixel";
+   font-weight: normal;
+   font-style: normal;
+   font-size: 100px;
+  }
+  .gameimg{
+   grid-area: gameimg;
+   width: 400px;
+   height: 600px;
+   border-radius: 20px;
+  }
+  .gametext{
+   padding-left: 40px;
+   font-size: 23px;
+   text-align: left;
+  }
+  .rating{
+   grid-area: footer;
+  }
+  .grid-container{
+   display: grid;
+   grid-template-areas:
+   'header header header header header header'
+   'gameimg gameimg gametext gametext gametext gametext'
+   'footer footer footer footer footer footer';
+   margin-top:30px;
+  }
