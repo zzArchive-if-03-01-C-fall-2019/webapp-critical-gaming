@@ -11,10 +11,52 @@ const session = require('express-session')
 const methodOverride = require('method-override')
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+var path = require('path');
+var router = express.Router();
 
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/views/html/home.html');
 });
+
+app.get('/home', function(req, res){
+    res.sendFile(__dirname + '/views/html/home.html');
+});
+
+app.get('/gaming', function (req, res) {
+  res.sendFile(__dirname + '/views/html/gaming.html')
+})
+
+app.get('/AboutUs', function (req, res) {
+  res.sendFile(__dirname + '/views/html/AboutUs.html')
+})
+
+app.get('/changelog', function (req, res) {
+  res.sendFile(__dirname + '/views/html/changelog.html')
+})
+
+app.get('/dev', function (req, res) {
+  res.sendFile(__dirname + '/views/html/dev.html')
+})
+
+app.get('/games', function (req, res) {
+  res.sendFile(__dirname + '/views/html/games.html')
+})
+
+app.get('/HallOfFame', function (req, res) {
+  res.sendFile(__dirname + '/views/html/HallOfFame.html')
+})
+
+app.get('/publisher', function (req, res) {
+  res.sendFile(__dirname + '/views/html/publisher.html')
+})
+
+app.get('/survey', function (req, res) {
+  res.sendFile(__dirname + '/views/html/survey.html')
+})
+
+//app.get('/csgo', function (req, res) {
+//  res.sendFile(__dirname + '/views/html/games/csgo/csgo.html')
+//})
 
 const initializePassport = require('./passport-config')
 initializePassport(
@@ -26,6 +68,7 @@ initializePassport(
 const users = []
 
 app.set('view-engine', 'ejs')
+app.use(express.static('views'));
 app.use(express.urlencoded({ extended: false }))
 app.use(flash())
 app.use(session({
