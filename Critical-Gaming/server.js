@@ -20,6 +20,7 @@ app.use('/static', express.static(path.join(__dirname, '/views/html/games/')))
 
 app.use(favicon(path.join(__dirname, 'views', 'css', 'pictures', 'favicon.ico')))
 
+//All basic HTML Files for the server
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/views/html/home.html');
 });
@@ -60,9 +61,54 @@ app.get('/survey', function (req, res) {
   res.sendFile(__dirname + '/views/html/survey.html')
 })
 
-//app.get('/csgo', function (req, res) {
-//  res.sendFile(__dirname + '/views/html/games/csgo/csgo.html')
-//})
+//All HTML pages for the games tab
+app.get('/cities_skylines_page', function (req, res) {
+  res.sendFile(__dirname + '/views/html/games/cities_skylines/cities_skylines_page.html')
+})
+
+app.get('/darksouls3', function (req, res) {
+  res.sendFile(__dirname + '/views/html/games/darksouls3/darksouls3.html')
+})
+
+app.get('/csgo', function (req, res) {
+  res.sendFile(__dirname + '/views/html/games/csgo/csgo.html')
+})
+
+app.get('/escape_fro_tarkov_page', function (req, res) {
+  res.sendFile(__dirname + '/views/html/games/escape_from_takrov/escape_fro_tarkov_page.html')
+})
+
+app.get('/fallenorder', function (req, res) {
+  res.sendFile(__dirname + '/views/html/games/fallenorder/fallenorder.html')
+})
+
+app.get('/fortnite_page', function (req, res) {
+  res.sendFile(__dirname + '/views/html/games/fortnite/fortnite_page.html')
+})
+
+app.get('/lol', function (req, res) {
+  res.sendFile(__dirname + '/views/html/games/lol/lol.html')
+})
+
+app.get('/minecraft', function (req, res) {
+  res.sendFile(__dirname + '/views/html/games/minecraft/minecraft.html')
+})
+
+app.get('/nomansky', function (req, res) {
+  res.sendFile(__dirname + '/views/html/games/nomansky/nomansky.html')
+})
+
+app.get('/odyssey', function (req, res) {
+  res.sendFile(__dirname + '/views/html/games/odyssey/odyssey.html')
+})
+
+app.get('/rainbow_six', function (req, res) {
+  res.sendFile(__dirname + '/views/html/games/rainbow_six/rainbow_six.html')
+})
+
+app.get('/witcher3', function (req, res) {
+  res.sendFile(__dirname + '/views/html/games/witcher3/witcher3.html')
+})
 
 const initializePassport = require('./passport-config')
 initializePassport(
