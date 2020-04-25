@@ -7,7 +7,19 @@
     <title>Critical Gaming - TestPhase</title>
   </head>
 
-<h1>Login</h1>
+  <nav>
+    <a class="nonactive" href="home"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a class="nonactive" href="gaming"><i class="fas fa-gamepad"></i> Gaming</a>
+    <a class="nonactive" href="games"><i class="fa fa-fw fa-search"></i> Games</a>
+    <a class="nonactive" href="dev"><i class="fas fa-terminal"></i> Dev </a>
+    <a class="nonactive" href="publisher"><i class="far fa-address-card"></i> Publisher</a>
+    <a class="nonactive" href="HallOfFame"><i class="fas fa-scroll"></i> Hall of Fame</a>
+    <a class="nonactive" href="AboutUs"><i class="fas fa-user-secret"></i> About us</a>
+    <a class="active" href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+  </nav>
+
+<section class="distance">
+<h2>Login</h2>
 <% if (messages.error) { %>
 <%= messages.error %>
 <% } %>
@@ -22,4 +34,5 @@
 </div>
 <button type="submit">Login</button>
 </form>
+</section>
 <a href="/register">Register</a>
