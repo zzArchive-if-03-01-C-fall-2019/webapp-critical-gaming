@@ -123,35 +123,6 @@ section h3{
   text-align: center;
   padding-top: 250px;
 }
-
-.parallax-developer{
-  background-image: url('pictures/matrix.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 1000px;
-}
-.parallax-developer h1{
-  text-shadow: 0 0 5px black;
-  text-align: center;
-  padding-top: 250px;
-}
-
-.parallax-publisher{
-  background-image: url('pictures/publisher.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 1000px;
-}
-.parallax-publisher h1{
-  text-shadow: 0 0 5px black;
-  text-align: center;
-  padding-top: 250px;
-}
-
 .parallax-survey{
   background-image: url('pictures/survey.jpg');
   background-attachment: fixed;

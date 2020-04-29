@@ -18,8 +18,8 @@ ul
   
   }
   ul img {
-    width: 330px;
-    height: 260px;
+    width: 320px;
+    height: 230px;
     border-radius: 30px;
   }
   ul img:hover{
@@ -33,8 +33,13 @@ ul
     padding: 0;
     text-align: center;
     font-family: "Pixel";
-    font-size: 25px;
+    font-size: 30px;
 }
+footer{
+  margin-top: 100%;
+  float: none;
+}
+
 /**/
 .gameheader{
   grid-area: header;
