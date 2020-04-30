@@ -17,6 +17,8 @@ var favicon = require('serve-favicon')
 
 app.use(express.static(__dirname + 'views'));
 app.use('/static', express.static(path.join(__dirname, '/views/html/games/')))
+app.use('/devs', express.static(path.join(__dirname, '/views/html/devs/')))
+app.use('/publishers', express.static(path.join(__dirname, '/views/html/publishers/')))
 
 app.use(favicon(path.join(__dirname, 'views', 'css', 'pictures', 'favicon.ico')))
 
